@@ -44,6 +44,29 @@ The `CD` workflow runs on every push of a tag to the repository.
 
 - [x] Docker image build
 
+## Secrets
+
+### Docker
+
+- `DOCKER_USERNAME`
+- `DOCKER_PASSWORD`
+
+### GitHub
+
+- `GITHUB_TOKEN`
+
+### Semantic Versioning
+
+- `SEMVER_BUMP`
+
+## Derived Templates
+
+This template is used to create the following templates:
+
+- [python-template](https://github.com/entelechiea/python-template)
+- [pypi-template](https://github.com/entelechiea/pypi-template)
+- [jupyter-book-template](https://github.com/entelechiea/jupyter-book-template)
+
 ## References
 
 - [Git Semantic Version](https://github.com/marketplace/actions/git-semantic-version)
