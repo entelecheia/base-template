@@ -1,5 +1,6 @@
 # base-template
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8b3bb347d3da45328606e60b0e4880bd)](https://app.codacy.com/gh/entelecheia/base-template?utm_source=github.com&utm_medium=referral&utm_content=entelecheia/base-template&utm_campaign=Badge_Grade_Settings)
 [![GitHub Super-Linter](https://github.com/entelecheia/base-template/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 A base template for CI/CD workflows
