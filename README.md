@@ -1,4 +1,7 @@
 # base-template
+
+[![GitHub Super-Linter](https://github.com/entelecheia/base-template/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+
 A base template for CI/CD workflows
 
 ## Usage
@@ -34,9 +37,9 @@ A base template for CI/CD workflows
 
 ### CI
 
-The `CI` workflow runs on every push to the repository.
+The `Lint Code Base` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
 
-- [x] Linting
+1. Lint the codebase with GitHub's [Super-Linter](https://github.com/github/super-linter).
 
 ### CD
 
