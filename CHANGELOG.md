@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/entelecheia/base-template/compare/v1.0.3...v1.0.4) (2023-02-15)
+
+
+### Bug Fixes
+
+* order of plugins and setting for release ([67e7832](https://github.com/entelecheia/base-template/commit/67e78324b9c287798519466ca351da2207b41695))
+
 ## [1.0.3](https://github.com/entelecheia/base-template/compare/v1.0.2...v1.0.3) (2023-02-15)
 
 ### Bug Fixes

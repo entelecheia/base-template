@@ -1,6 +1,6 @@
 {
     "name": "base-template",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "description": "A template for CI/CD with GitHub Actions",
     "author": "entelecheia",
     "license": "MIT",
