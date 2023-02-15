@@ -1,13 +1,5 @@
 # base-template
 
-[![GitHub Super-Linter][linter-image]][linter-url]
-[![Codacy Badge][codacy-image]][codacy-url]
-![][workflows-badge-image]
-![][version-image]
-[![Release date][release-date-image]][release-url]
-[![semantic-release][semantic-image]][semantic-url]
-[![license][license-image]][license-url]
-
 A base template for CI/CD workflows with MkDocs and Semantic Release
 
 ## Usage
