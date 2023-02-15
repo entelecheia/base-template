@@ -60,7 +60,7 @@ The `Release` workflow is automatically triggered whenever there is push activit
 
 - Create a release draft with [semantic-release](https://github.com/semantic-release/semantic-release)
 
-#### [Publish docs via GitHub Pages](.github/workflows/cd-mkdocs.yaml)
+#### [Publish docs via GitHub Pages](.github/workflows/cd-cd-publish.yaml)
 
 The `Publish docs via GitHub Pages` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
 

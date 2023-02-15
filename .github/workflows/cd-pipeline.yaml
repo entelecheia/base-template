@@ -1,11 +1,11 @@
 ---
-name: Pipeline All
+name: CD Pipeline
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -13,16 +13,15 @@ permissions:
   pull-requests: write
 
 jobs:
-  # call-linting-workflow:
-  #   name: Lint Code Base
-  #   uses: ./.github/workflows/ci-linter.yaml
   call-build-workflow:
     name: Docs to PDF
     uses: ./.github/workflows/cd-build.yaml
+  call-publish-workflow:
+    name: Publish docs via GitHub Pages
+    uses: ./.github/workflows/cd-publish.yaml
   call-release-workflow:
     name: Release
     needs:
-      # - call-testing-workflow
       - call-build-workflow
     uses: ./.github/workflows/cd-release.yaml
     secrets: inherit

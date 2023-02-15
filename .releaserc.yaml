@@ -1,4 +1,4 @@
-# .releaserc.yml
+# .releaserc.yaml
 
 # Plugin configurations
 plugins:
@@ -42,10 +42,7 @@ release-notes-generator:
 # Learn more: https://github.com/semantic-release/git
 git:
   assets:
-    - CHANGELOG.md
-    - package.json
-    - docs
-    - docs/*.pdf
+    - pdfs/*.pdf
   message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
 
 # Configuration for @semantic-release/github
