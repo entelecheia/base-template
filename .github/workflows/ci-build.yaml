@@ -16,7 +16,7 @@ on:
   #     - "docs/images/**"
 
 jobs:
-  converttopdf:
+  build:
     name: Build PDF
     runs-on: ubuntu-latest
     steps:

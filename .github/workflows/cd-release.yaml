@@ -4,13 +4,6 @@ name: Release
 on:
   workflow_call:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - next
-      - next-major
-      - alpha
-      - beta
 
 jobs:
   release:
