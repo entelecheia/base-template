@@ -2,9 +2,10 @@
 name: Pipeline for all workflows
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
 
 jobs:
   # call-linting-workflow:
