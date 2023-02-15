@@ -1,7 +1,11 @@
 # base-template
-
-[![GitHub Super-Linter](https://github.com/entelecheia/base-template/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/f5d47f43f3ba4f1eb5f1d5140d2c69cd)](https://www.codacy.com/gh/entelecheia/base-template/dashboard?utm_source=github.com&utm_medium=referral&utm_content=entelecheia/base-template&utm_campaign=Badge_Grade)
+[![GitHub Super-Linter][linter-image]][linter-url]
+[![Codacy Badge][codacy-image]][codacy-url]
+![][workflows-badge-image]
+![][version-image]
+[![Release date][release-date-image]][release-url]
+[![semantic-release][semantic-image]][semantic-url]
+[![license][license-image]][license-url]
 
 A base template for CI/CD workflows with MkDocs and Semantic Release
 
@@ -84,4 +88,20 @@ This template is used to create the following templates:
 
 ## License
 
-[MIT](LICENSE)
+This project is released under the [MIT License][license-url].
+
+<!-- Links: -->
+
+[version-image]: https://img.shields.io/github/package-json/v/entelecheia/base-template
+[workflows-badge-image]: https://github.com/entelecheia/base-template/actions/workflows/cd-pipeline.yaml/badge.svg
+[release-date-image]: https://img.shields.io/github/release-date/entelecheia/base-template
+[release-url]: https://github.com/entelecheia/base-template/releases
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
+[license-image]: https://img.shields.io/github/license/entelecheia/base-template
+[license-url]: https://github.com/entelecheia/base-template/blob/main/LICENSE
+[changelog-url]: https://github.com/entelecheia/base-template/blob/main/docs/CHANGELOG.md
+[linter-image]: https://github.com/entelecheia/base-template/workflows/Lint%20Code%20Base/badge.svg
+[linter-url]: https://github.com/marketplace/actions/super-linter
+[codacy-image]: https://app.codacy.com/project/badge/Grade/f5d47f43f3ba4f1eb5f1d5140d2c69cd
+[codacy-url]: https://www.codacy.com/gh/entelecheia/base-template/dashboard?utm_source=github.com&utm_medium=referral&utm_content=entelecheia/base-template&utm_campaign=Badge_Grade

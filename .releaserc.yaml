@@ -7,14 +7,7 @@ plugins:
   - "@semantic-release/changelog"
   - "@semantic-release/git"
   - "@semantic-release/github"
-  - ['@semantic-release/git', {
-      assets: [
-        'CHANGELOG.md',
-        'package.json',
-        'package-lock.json',
-        'pdf/*.pdf' # File glob pattern for PDF files
-      ]
-    }]
+  - "@semantic-release/git"
 # Branches to release from
 branches:
   - main
@@ -37,11 +30,18 @@ commit-analyzer:
 release-notes-generator:
   preset: conventionalcommits
 
+# Configuration for @semantic-release/changelog
+# Updates the changelog file with the release notes.
+# Learn more: https://github.com/semantic-release/changelog
+changelog:
+  changelogFile: docs/CHANGELOG.md
+
 # Configuration for @semantic-release/git
 # Commits the version change and release notes to the Git repository.
 # Learn more: https://github.com/semantic-release/git
 git:
   assets:
+    - docs/CHANGELOG.md
     - pdfs/*.pdf
   message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
 
