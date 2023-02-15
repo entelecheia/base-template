@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/entelecheia/base-template/compare/v1.0.5...v1.0.6) (2023-02-15)
+
+
+### Bug Fixes
+
+* :art: remove pdfs, move CHANGELOG ([b4b5326](https://github.com/entelecheia/base-template/commit/b4b5326784fe62e97f1ad136c500bd036329b86e))
+
 ## [1.0.5](https://github.com/entelecheia/base-template/compare/v1.0.4...v1.0.5) (2023-02-15)
 
 ### Bug Fixes
