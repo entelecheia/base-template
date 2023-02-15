@@ -21,8 +21,8 @@
     "homepage": "https://github.com/entelecheia/base-template#readme",
     "dependencies": {
         "@actions/core": "^1.10.0",
-        "actions/download-artifact": "^v2",
-        "actions/upload-artifact": "^v2",
-        "baileyjm02/markdown-to-pdf": "v1"
+        "@actions/exec": "^1.0.4",
+        "@actions/github": "^4.0.0",
+        "semver": "^6.3.0"
     }
 }

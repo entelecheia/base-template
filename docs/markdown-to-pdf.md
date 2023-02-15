@@ -2,7 +2,7 @@
 
 Creates PDF and HTML files from Markdown using the GitHub (or custom) theme.
 
-## Notable Features:
+## Notable Features
 
 - Code highlighting
 - Tables

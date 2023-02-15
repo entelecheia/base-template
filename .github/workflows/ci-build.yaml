@@ -6,13 +6,13 @@ name: Docs to PDF
 on:
   workflow_call:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
-    paths:
-      - "docs/**.md"
-      - "docs/images/**"
+  # push:
+  #   branches:
+  #     - main
+  #   # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
+  #   paths:
+  #     - "docs/**.md"
+  #     - "docs/images/**"
 
 jobs:
   converttopdf:
