@@ -34,7 +34,7 @@ release-notes-generator:
 # Updates the changelog file with the release notes.
 # Learn more: https://github.com/semantic-release/changelog
 changelog:
-  changelogFile: docs/CHANGELOG.md
+  changelogFile: CHANGELOG.md
 
 # Configuration for @semantic-release/git
 # Commits the version change and release notes to the Git repository.
