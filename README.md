@@ -1,4 +1,5 @@
 # base-template
+
 [![GitHub Super-Linter][linter-image]][linter-url]
 [![Codacy Badge][codacy-image]][codacy-url]
 ![][workflows-badge-image]
@@ -69,6 +70,35 @@ The `Release` workflow is automatically triggered whenever there is push activit
 The `Publish docs via GitHub Pages` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
 
 - Publish the documentation to GitHub Pages with [MkDocs](https://www.mkdocs.org/)
+
+## Semantic Release
+
+### Commit message format
+
+**semantic-release** uses the commit messages to determine the consumer impact of changes in the codebase.
+Following formalized conventions for commit messages, **semantic-release** automatically determines the next [semantic version](https://semver.org) number, generates a changelog and publishes the release.
+
+By default, **semantic-release** uses [Angular Commit Message Conventions](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format).
+The commit message format can be changed with the [`preset` or `config` options](docs/usage/configuration.md#options) of the [@semantic-release/commit-analyzer](https://github.com/semantic-release/commit-analyzer#options) and [@semantic-release/release-notes-generator](https://github.com/semantic-release/release-notes-generator#options) plugins.
+
+Tools such as [commitizen](https://github.com/commitizen/cz-cli) or [commitlint](https://github.com/conventional-changelog/commitlint) can be used to help contributors and enforce valid commit messages.
+
+The table below shows which commit message gets you which release type when `semantic-release` runs (using the default configuration):
+
+| Commit message                                                                                                                                                                                   | Release type                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| `fix(pencil): stop graphite breaking when too much pressure applied`                                                                                                                             | ~~Patch~~ Fix Release                                                                                           |
+| `feat(pencil): add 'graphiteWidth' option`                                                                                                                                                       | ~~Minor~~ Feature Release                                                                                       |
+| `perf(pencil): remove graphiteWidth option`<br><br>`BREAKING CHANGE: The graphiteWidth option has been removed.`<br>`The default graphite width of 10mm is always used for performance reasons.` | ~~Major~~ Breaking Release <br /> (Note that the `BREAKING CHANGE: ` token must be in the footer of the commit) |
+
+### Automation with CI
+
+**semantic-release** is meant to be executed on the CI environment after every successful build on the release branch.
+This way no human is directly involved in the release process and the releases are guaranteed to be [unromantic and unsentimental](http://sentimentalversioning.org).
+
+### Triggering a release
+
+For each new commit added to one of the release branches (for example: `main`, `next`, `beta`), with `git push` or by merging a pull request or merging from another branch, a CI build is triggered and runs the `semantic-release` command to make a release if there are codebase changes since the last release that affect the package functionalities.
 
 ## Derived Templates
 
