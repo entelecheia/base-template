@@ -1,5 +1,5 @@
 ---
-name: Pipeline for all workflows
+name: Pipeline All
 
 on:
   workflow_dispatch:
@@ -13,11 +13,10 @@ jobs:
   #   uses: ./.github/workflows/ci-linter.yaml
   call-build-workflow:
     name: Docs to PDF
-    uses: ./.github/workflows/ci-build.yaml
+    uses: ./.github/workflows/cd-build.yaml
   call-release-workflow:
     name: Release
     needs:
       # - call-testing-workflow
       - call-build-workflow
     uses: ./.github/workflows/cd-release.yaml
-    secrets: inherit

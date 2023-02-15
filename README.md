@@ -48,17 +48,20 @@ The `Lint Code Base` workflow is automatically triggered whenever there is push 
 
 - Lint the codebase with GitHub's [Super-Linter](https://github.com/github/super-linter).
 
-#### [Docs to PDF](.github/workflows/ci-build.yaml)
+
+### CD (Continuous Deployment)
+
+#### [Docs to PDF](.github/workflows/cd-build.yaml)
 
 The `Docs to PDF` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
 
 - Build the documentation to PDF with [Markdown to PDF](https://github.com/BaileyJM02/markdown-to-pdf)
 
-### CD (Continuous Deployment)
+#### [Release](.github/workflows/cd-release.yaml)
 
-The `CD` workflow runs on every push of a tag to the repository.
+The `Release` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
 
-- [x] Docker image build
+- Create a release draft with [semantic-release](https://github.com/semantic-release/semantic-release)
 
 ## Derived Templates
 
