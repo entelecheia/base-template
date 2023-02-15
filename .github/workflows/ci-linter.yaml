@@ -10,7 +10,8 @@ name: Lint Code Base
 #############################
 on:
   push:
-    branches: main
+    branches-ignore: [main]
+    # Remove the line above to run when pushing to main
   pull_request:
     branches: main
   workflow_dispatch:
