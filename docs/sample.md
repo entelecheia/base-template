@@ -1,4 +1,4 @@
-# [Markdown to PDF ](https://github.com/BaileyJM02/markdown-to-pdf)
+# [Markdown to PDF](https://github.com/BaileyJM02/markdown-to-pdf)
 
 Creates PDF and HTML files from Markdown using the GitHub (or custom) theme.
 

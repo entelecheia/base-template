@@ -32,13 +32,21 @@ A base template for CI/CD workflows
 
 ## Workflows
 
-### CI
+### CI (Continuous Integration)
+
+#### [Lint Code Base](.github/workflows/ci-linter.yaml)
 
 The `Lint Code Base` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
 
-1. Lint the codebase with GitHub's [Super-Linter](https://github.com/github/super-linter).
+- Lint the codebase with GitHub's [Super-Linter](https://github.com/github/super-linter).
 
-### CD
+#### [Docs to PDF](.github/workflows/ci-build.yaml)
+
+The `Docs to PDF` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
+
+- Build the documentation to PDF with [Markdown to PDF](https://github.com/BaileyJM02/markdown-to-pdf)
+
+### CD (Continuous Deployment)
 
 The `CD` workflow runs on every push of a tag to the repository.
 
