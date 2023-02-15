@@ -116,9 +116,9 @@ For each new commit added to one of the release branches (for example: `main`, `
 
 This template is used to create the following templates:
 
-- [python-template](https://github.com/entelechiea/python-template)
-- [pypi-template](https://github.com/entelechiea/pypi-template)
-- [jupyter-book-template](https://github.com/entelechiea/jupyter-book-template)
+- [python-template](https://github.com/entelecheia/python-template)
+- [pypi-template](https://github.com/entelecheia/pypi-template)
+- [jupyter-book-template](https://github.com/entelecheia/jupyter-book-template)
 
 ## References
 
