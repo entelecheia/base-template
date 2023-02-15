@@ -3,7 +3,7 @@
 [![GitHub Super-Linter](https://github.com/entelecheia/base-template/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f5d47f43f3ba4f1eb5f1d5140d2c69cd)](https://www.codacy.com/gh/entelecheia/base-template/dashboard?utm_source=github.com&utm_medium=referral&utm_content=entelecheia/base-template&utm_campaign=Badge_Grade)
 
-A base template for CI/CD workflows
+A base template for CI/CD workflows with MkDocs and Semantic Release
 
 ## Usage
 
@@ -13,30 +13,28 @@ A base template for CI/CD workflows
 2. Enter a name for your repository
 3. Click `Create repository from template`
 
-### Configure the repository
-
-1. Click the `Settings` tab
-2. Click `Secrets and variables`
-3. Click `Actions`
-4. Click `New repository secret`, and add the following secrets:
-
-    - `GH_TOKEN`: A GitHub [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). The token should have the `repo` scope to allow the workflow to push to the repository.
-    - `NPM_TOKEN`: generated from [npmjs.com](https://www.npmjs.com/).
-
-### Configure the workflow
-
-### Push a commit
-
 ### Initial release
 
 Push a commit to the `main` branch with the message `feat: initial commit`
+
+### GitHub Pages
+
+1. Modify the contents of the `mkdocs.yaml` file
+2. Add content to the `docs` folder
+3. Push a commit to the `main` branch
+4. Wait for the `Publish docs via GitHub Pages` workflow to complete
+5. Go to the `Settings` tab of your repository
+6. Scroll down to the `pages` section
+7. Select `Deploy from a branch` as the source
+8. Select `gh-pages` as the branch and `/(root)` as the folder, then click `Save`
 
 ## Features
 
 - [x] Linting
 - [x] Automated Release Draft
 - [x] Semantic versioning
-- [x] Secrets management
+- [x] Documentation to PDF
+- [x] Github Pages deployment (MkDocs)
 
 ## Workflows
 
@@ -47,7 +45,6 @@ Push a commit to the `main` branch with the message `feat: initial commit`
 The `Lint Code Base` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
 
 - Lint the codebase with GitHub's [Super-Linter](https://github.com/github/super-linter).
-
 
 ### CD (Continuous Deployment)
 
@@ -62,6 +59,12 @@ The `Docs to PDF` workflow is automatically triggered whenever there is push act
 The `Release` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
 
 - Create a release draft with [semantic-release](https://github.com/semantic-release/semantic-release)
+
+#### [Publish docs via GitHub Pages](.github/workflows/cd-mkdocs.yaml)
+
+The `Publish docs via GitHub Pages` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
+
+- Publish the documentation to GitHub Pages with [MkDocs](https://www.mkdocs.org/)
 
 ## Derived Templates
 
