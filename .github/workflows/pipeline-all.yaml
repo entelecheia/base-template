@@ -7,6 +7,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 jobs:
   # call-linting-workflow:
   #   name: Lint Code Base
@@ -20,3 +25,4 @@ jobs:
       # - call-testing-workflow
       - call-build-workflow
     uses: ./.github/workflows/cd-release.yaml
+    secrets: inherit
