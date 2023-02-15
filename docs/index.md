@@ -10,6 +10,18 @@ A base template for CI/CD workflows with MkDocs and Semantic Release
 2. Enter a name for your repository
 3. Click `Create repository from template`
 
+## Add secrets for GitHub Actions
+
+1. Go to the `Settings` tab of your repository
+2. Click `Secrets` in the left sidebar
+3. Click `New repository secret`
+4. Add the following secrets:
+
+| Name         | Value                         |
+| ------------ | ----------------------------- |
+| GITHUB_TOKEN | `${{ secrets.GITHUB_TOKEN }}` |
+| NPM_TOKEN    | `${{ secrets.NPM_TOKEN }}`    |
+
 ### Initial release
 
 Push a commit to the `main` branch with the message `feat: initial commit`

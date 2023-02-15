@@ -18,6 +18,18 @@ A base template for CI/CD workflows with MkDocs and Semantic Release
 2. Enter a name for your repository
 3. Click `Create repository from template`
 
+## Add secrets for GitHub Actions
+
+1. Go to the `Settings` tab of your repository
+2. Click `Secrets` in the left sidebar
+3. Click `New repository secret`
+4. Add the following secrets:
+
+| Name         | Value                         |
+| ------------ | ----------------------------- |
+| GITHUB_TOKEN | `${{ secrets.GITHUB_TOKEN }}` |
+| NPM_TOKEN    | `${{ secrets.NPM_TOKEN }}`    |
+
 ### Initial release
 
 Push a commit to the `main` branch with the message `feat: initial commit`
@@ -134,4 +146,4 @@ This project is released under the [MIT License][license-url].
 [linter-image]: https://github.com/entelecheia/base-template/workflows/Lint/badge.svg
 [linter-url]: https://github.com/marketplace/actions/super-linter
 [codacy-image]: https://app.codacy.com/project/badge/Grade/f5d47f43f3ba4f1eb5f1d5140d2c69cd
-[codacy-url]: https://www.codacy.com/gh/entelecheia/base-template/dashboard?utm_source=github.com&utm_medium=referral&utm_content=entelecheia/base-template&utm_campaign=Badge_Grade
+[codacy-url]: https://www.codacy.com/gh/entelecheia/base-template/dashboard?utm_source=github.com&utm_medium=referral&utm_content=entelecheia/base-template&utm_campaign=Badge_G
