@@ -21,11 +21,7 @@ A base template for CI/CD workflows
 
 ### Configure the workflow
 
-1. Click the `.github/workflows` folder
-
 ### Push a commit
-
-1. Click the `Code` tab
 
 ## Features
 
@@ -50,11 +46,6 @@ The `CD` workflow runs on every push of a tag to the repository.
 
 ## Secrets
 
-### Docker
-
-- `DOCKER_USERNAME`
-- `DOCKER_PASSWORD`
-
 ### GitHub
 
 - `GITHUB_TOKEN`
@@ -74,6 +65,9 @@ This template is used to create the following templates:
 ## References
 
 - [Git Semantic Version](https://github.com/marketplace/actions/git-semantic-version)
+- https://semver.org/
+- https://www.conventionalcommits.org/en/v1.0.0/
+- https://github.com/semantic-release/semantic-release
 
 ## License
 
