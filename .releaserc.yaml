@@ -5,9 +5,9 @@ plugins:
   - "@semantic-release/commit-analyzer"
   - "@semantic-release/release-notes-generator"
   - "@semantic-release/changelog"
+  - "@semantic-release/npm"
   - "@semantic-release/git"
   - "@semantic-release/github"
-  - "@semantic-release/git"
 # Branches to release from
 branches:
   - main
@@ -34,14 +34,23 @@ release-notes-generator:
 # Updates the changelog file with the release notes.
 # Learn more: https://github.com/semantic-release/changelog
 changelog:
-  changelogFile: CHANGELOG.md
+  changelogFile: docs/CHANGELOG.md
+
+# Configuration for @semantic-release/npm
+# Publishes the package to the npm registry.
+# Learn more: https://github.com/semantic-release/npm
+npm:
+  npmPublish: false
 
 # Configuration for @semantic-release/git
 # Commits the version change and release notes to the Git repository.
 # Learn more: https://github.com/semantic-release/git
 git:
   assets:
-    - pdfs/*.pdf
+    - docs/CHANGELOG.md
+    - docs/pdfs
+    - package.json
+    - package-lock.json
   message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
 
 # Configuration for @semantic-release/github
@@ -50,5 +59,4 @@ git:
 github:
   release: true
   assets:
-    - path: pdfs/*.pdf
-      label: docs
+    - docs/pdfs

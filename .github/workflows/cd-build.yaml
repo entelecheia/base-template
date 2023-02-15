@@ -26,7 +26,7 @@ jobs:
         uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_path: docs
-          output_dir: pdfs
+          output_dir: docs/pdfs
           images_dir: docs/images
           # for example <img src="./images/file-name.png">
           image_import: ./images
@@ -36,4 +36,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: docs
-          path: pdfs
+          path: docs/pdfs
