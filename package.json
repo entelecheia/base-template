@@ -1,0 +1,28 @@
+{
+    "name": "base-template",
+    "version": "1.0.0",
+    "description": "A template for CI/CD with GitHub Actions",
+    "author": "entelecheia",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/entelecheia/base-template.git"
+    },
+    "keywords": [
+        "GitHub",
+        "Actions",
+        "Template",
+        "CI",
+        "CD"
+    ],
+    "bugs": {
+        "url": "https://github.com/entelecheia/base-template/issues"
+    },
+    "homepage": "https://github.com/entelecheia/base-template#readme",
+    "dependencies": {
+        "@actions/core": "^1.10.0",
+        "actions/download-artifact": "^v2",
+        "actions/upload-artifact": "^v2",
+        "baileyjm02/markdown-to-pdf": "v1"
+    }
+}

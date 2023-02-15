@@ -1,0 +1,21 @@
+name: Pipeline for all workflows
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-linting-workflow:
+    name: Lint Code Base
+    uses: ./.github/workflows/ci-linter.yaml
+  call-build-workflow:
+    name: Docs to PDF
+    uses: ./.github/workflows/ci-build.yaml
+  call-release-workflow:
+    name: Release
+    needs:
+      # - call-testing-workflow
+      - call-build-workflow
+    uses: ./.github/workflows/cd-release.yaml
+    secrets: inherit
