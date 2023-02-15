@@ -1,7 +1,7 @@
 # base-template
 
-[![GitHub Super-Linter][linter-image]][linter-url]
 [![Codacy Badge][codacy-image]][codacy-url]
+[![GitHub Super-Linter][linter-image]][linter-url]
 ![][workflows-badge-image]
 ![][version-image]
 [![Release date][release-date-image]][release-url]
@@ -45,9 +45,9 @@ Push a commit to the `main` branch with the message `feat: initial commit`
 
 ### CI (Continuous Integration)
 
-#### [Lint Code Base](.github/workflows/ci-linter.yaml)
+#### [Lint](.github/workflows/ci-linter.yaml)
 
-The `Lint Code Base` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
+The `Lint` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
 
 - Lint the codebase with GitHub's [Super-Linter](https://github.com/github/super-linter).
 
@@ -131,7 +131,7 @@ This project is released under the [MIT License][license-url].
 [license-image]: https://img.shields.io/github/license/entelecheia/base-template
 [license-url]: https://github.com/entelecheia/base-template/blob/main/LICENSE
 [changelog-url]: https://github.com/entelecheia/base-template/blob/main/docs/CHANGELOG.md
-[linter-image]: https://github.com/entelecheia/base-template/workflows/Lint%20Code%20Base/badge.svg
+[linter-image]: https://github.com/entelecheia/base-template/workflows/Lint/badge.svg
 [linter-url]: https://github.com/marketplace/actions/super-linter
 [codacy-image]: https://app.codacy.com/project/badge/Grade/f5d47f43f3ba4f1eb5f1d5140d2c69cd
 [codacy-url]: https://www.codacy.com/gh/entelecheia/base-template/dashboard?utm_source=github.com&utm_medium=referral&utm_content=entelecheia/base-template&utm_campaign=Badge_Grade

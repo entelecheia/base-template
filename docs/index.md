@@ -37,9 +37,9 @@ Push a commit to the `main` branch with the message `feat: initial commit`
 
 ### CI (Continuous Integration)
 
-#### Lint Code Base
+#### Lint
 
-The `Lint Code Base` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
+The `Lint` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
 
 - Lint the codebase with GitHub's [Super-Linter](https://github.com/github/super-linter).
 
