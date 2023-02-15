@@ -19,9 +19,6 @@ jobs:
   call-build-workflow:
     name: Docs to PDF
     uses: ./.github/workflows/cd-build.yaml
-  call-publish-workflow:
-    name: Publish docs via GitHub Pages
-    uses: ./.github/workflows/cd-publish.yaml
   call-release-workflow:
     name: Release
     needs:
